@@ -5,13 +5,13 @@ description: Claude Code 安装指南，支持终端 CLI、VS Code、桌面应�
 
 import { Tabs, Callout } from 'nextra/components'
 
-# 安装 Claude Code
+# 安装 Claude Code（Anthropic）
 
-Claude Code 是一个由 AI 驱动的编码助手，理解你的整个代码库，可以跨多个文件和工具工作。可在终端、IDE、桌面应用和浏览器中使用。
+Claude Code 是 **Anthropic** 提供的 AI 编码助手，能够理解你的整个代码库，并在多个文件和工具间协同工作。可在终端、IDE、桌面应用和浏览器中使用。
 
 ## 前置要求
 
-- [OfoxAI API Key](https://app.ofox.ai)（注册即可获取，无需 Claude 订阅）
+- 拥有可用的 Claude 账户与访问权限（如你的组织策略有额外要求，请以组织文档为准）。
 
 ## 终端 CLI
 
@@ -67,7 +67,7 @@ winget install Anthropic.ClaudeCode
   </Tabs.Tab>
 </Tabs>
 
-安装完成后，请先完成 [配置模型供应商](/zh/docs/integrations/claude-code/model-provider) 再启动使用。
+安装完成后，运行 `claude` 并按提示完成登录与初始化设置。
 
 ## VS Code / Cursor
 
@@ -104,6 +104,6 @@ brew uninstall claude-code # Homebrew
 
 ## 下一步
 
-- [配置模型供应商](/zh/docs/integrations/claude-code/model-provider) — 使用 OfoxAI 作为 API 提供商
-- [CCometixLine 状态栏](/zh/docs/integrations/claude-code/contextline) — 实时显示 Git 状态、模型、上下文用量
-- [配置 Skills](/zh/docs/integrations/claude-code/skills) — 扩展 Claude Code 能力
+- 在项目目录执行 `claude` 开始会话
+- 在 VS Code / JetBrains 中打开 Claude Code 扩展或插件以获得 IDE 内工作流
+- 定期升级客户端以获取最新能力与修复
